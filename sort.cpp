@@ -7,7 +7,7 @@ void printarray(int arr[],int n){
      cout << endl;
 
 }
-void sort one (int arr[],int n){
+void sortone (int arr[],int n){
     int left =0,right =n-1;
     while(left < right){
         while(arr[left]==0 &&left < right){
