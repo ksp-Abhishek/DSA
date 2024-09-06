@@ -1,5 +1,14 @@
 #include<iostream>
 using namespace std;
+char tolowercase(char ch){
+    if(ch>='a'&&ch<='z')
+    return ch;
+    else{
+        char temp=ch-'A'+'a';
+        return temp;
+
+    }
+}
 bool checkpalindrom(char a[],int n){
     int s=0;
     int e=n-1;
@@ -46,6 +55,8 @@ int main(){
      cout<<name<<endl;
     
      cout<<"palindrom or not:"<<checkpalindrom(name,len)<<endl;
+     cout<<"CHARACTER is"<<tolowercase('b')<<endl;
+     cout<<"CHARACTER is"<<tolowercase('C')<<endl;
       return 0;
 }
 
